@@ -1,14 +1,9 @@
 sudo: required
 
 env:
-  - VERSION=latest
-  - VERSION=2.1.1 URL=http://d3kbcqa49mib13.cloudfront.net/spark-2.1.1-bin-hadoop2.7.tgz
-  - VERSION=2.2.0 URL=http://d3kbcqa49mib13.cloudfront.net/spark-2.2.0-bin-hadoop2.7.tgz
-  - VERSION=2.1.1 URL=http://d3kbcqa49mib13.cloudfront.net/spark-2.1.1-bin-hadoop2.7.tgz
-  - VERSION=2.1.0 URL=http://d3kbcqa49mib13.cloudfront.net/spark-2.1.0-bin-hadoop2.7.tgz
-  - VERSION=2.0.2 URL=http://d3kbcqa49mib13.cloudfront.net/spark-2.0.2-bin-hadoop2.7.tgz
-  - VERSION=1.6.2 URL=http://d3kbcqa49mib13.cloudfront.net/spark-1.6.2-bin-hadoop2.6.tgz
-
+  - VERSION=latest URL=https://www.apache.org/dyn/mirrors/mirrors.cgi?action=download&filename=/spark/spark-2.3.0/spark-2.3.0-bin-hadoop2.7.tgz
+  - VERSION=2.3.0 URL=https://www.apache.org/dyn/mirrors/mirrors.cgi?action=download&filename=/spark/spark-2.3.0/spark-2.3.0-bin-hadoop2.7.tgz
+  
 services:
    - docker
 
