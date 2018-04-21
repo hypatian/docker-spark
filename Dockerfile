@@ -1,4 +1,4 @@
-FROM flokkr/base:26
+FROM flokkr/base:29
 ARG URL
 ENV CONF_DIR /opt/spark/conf
 WORKDIR /opt

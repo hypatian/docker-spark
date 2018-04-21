@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-if [ -f "/opt/hadoop/bin/oz" ]; then
+if [ -f "/opt/hadoop/bin/ozone" ]; then
    export HADOOP_SHELL_PROFILES=ozone
 fi
 if [ -f "/opt/hadoop/bin/hadoop" ]; then

@@ -1,15 +1,14 @@
 sudo: required
 
 env:
-  - VERSION=latest URL=https://www.apache.org/dyn/mirrors/mirrors.cgi?action=download&filename=/spark/spark-2.3.0/spark-2.3.0-bin-hadoop2.7.tgz
-  - VERSION=2.3.0 URL=https://www.apache.org/dyn/mirrors/mirrors.cgi?action=download&filename=/spark/spark-2.3.0/spark-2.3.0-bin-hadoop2.7.tgz
+  - VERSION=2.3.0 TAG=latest
   
 services:
    - docker
 
 script:
-   - make build
+   - ./builld build
 
 after_success:
    - docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD"
-   - make deploy
+   - ./build deploy
