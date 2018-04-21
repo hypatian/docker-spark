@@ -7,8 +7,8 @@ services:
    - docker
 
 script:
-   - ./build build
+   - ./build.sh build
 
 after_success:
    - docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD"
-   - ./build deploy
+   - ./build.sh deploy
